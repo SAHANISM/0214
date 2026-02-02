@@ -1,0 +1,67 @@
+body {
+  background: #ffe6f2;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 30px;
+  overflow-x: hidden;
+}
+
+h1, h2 {
+  color: #ff4d88;
+}
+
+.message {
+  max-width: 500px;
+  margin: 20px auto;
+  color: #b30059;
+  font-size: 18px;
+}
+
+button {
+  padding: 12px 22px;
+  margin: 10px;
+  font-size: 18px;
+  background: #ff80bf;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff4d94;
+}
+
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ff99cc;
+}
+
+.hidden {
+  display: none;
+}
+
+img {
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+#errorMsg {
+  color: #cc0000;
+}
+
+/* Tulips */
+.tulips::before {
+  content: "🌷 🌷 🌷 🌷 🌷";
+  position: fixed;
+  top: -50px;
+  width: 100%;
+  font-size: 30px;
+  animation: floatDown 15s linear infinite;
+}
+
+@keyframes floatDown {
+  to {
+    transform: translateY(120vh);
+  }
+}
