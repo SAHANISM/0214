@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Valentine 💕</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="tulips"></div>
+
+<div id="password-screen">
+  <h2>What is the name of pooch? 🐶</h2>
+  <input id="passwordInput" placeholder="Type answer here">
+  <button onclick="checkPassword()">Submit</button>
+  <p id="passwordError"></p>
+</div>
+
+<div id="valentine-screen" class="hidden">
+  <h1>Will you be my Valentine? 🌷</h1>
+
+  <p class="message">
+    Hey you 💕<br><br>
+    I was going to write a long speech,<br>
+    but honestly it comes down to this:<br><br>
+    You make my days brighter,<br>
+    my laughs louder,<br>
+    and my heart very suspiciously happy.<br><br>
+    So…
+  </p>
+
+  <img id="displayImage" class="hidden">
+
+  <div class="buttons">
+    <button id="yesBtn">Yes 💖</button>
+    <button id="noBtn">No 😈</button>
+  </div>
+
+  <p id="errorMsg"></p>
+  <canvas id="fireworks"></canvas>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
