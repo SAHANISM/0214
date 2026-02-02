@@ -1,9 +1,9 @@
 const correctPassword = "rosie";
 
 const badImages = [
-  "images/bad1.jpg",
-  "images/bad2.jpg",
-  "images/bad3.jpg"
+  "images/IMG_6033.jpeg",
+  "images/IMG_4725.jpeg",
+  "images/IMG_5108.jpeg"
 ];
 
 let noCount = 0;
@@ -21,7 +21,7 @@ function checkPassword() {
 
 document.getElementById("yesBtn").onclick = () => {
   const img = document.getElementById("displayImage");
-  img.src = "images/good.jpg";
+  img.src = "images/IMG_1576.jpeg";
   img.classList.remove("hidden");
   document.getElementById("errorMsg").textContent = "Yay!! I knew it 💖";
   launchFireworks();
