@@ -36,7 +36,6 @@ document.getElementById("noBtn").onclick = (e) => {
 
   noCount++;
 
-  // Move button
   const btn = e.target;
   btn.style.position = "absolute";
   btn.style.left = Math.random() * 80 + "%";
@@ -51,7 +50,7 @@ function launchFireworks() {
 
   let particles = [];
 
-  for (let i = 0; i < 100; i++) {
+  for (let i = 0; i < 120; i++) {
     particles.push({
       x: canvas.width / 2,
       y: canvas.height / 2,
@@ -77,4 +76,14 @@ function launchFireworks() {
   }
 
   animate();
+}
+
+/* Floating tulips (iPad safe) */
+for (let i = 0; i < 10; i++) {
+  const tulip = document.createElement("div");
+  tulip.className = "tulip";
+  tulip.textContent = "🌷";
+  tulip.style.left = Math.random() * 100 + "vw";
+  tulip.style.animationDuration = 10 + Math.random() * 10 + "s";
+  document.body.appendChild(tulip);
 }
