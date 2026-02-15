@@ -51,16 +51,15 @@ img {
 }
 
 /* Tulips */
-.tulips::before {
-  content: "🌷 🌷 🌷 🌷 🌷";
+.tulip {
   position: fixed;
-  top: -50px;
-  width: 100%;
-  font-size: 30px;
-  animation: floatDown 15s linear infinite;
+  top: -40px;
+  font-size: 28px;
+  animation: fall linear infinite;
+  pointer-events: none;
 }
 
-@keyframes floatDown {
+@keyframes fall {
   to {
     transform: translateY(120vh);
   }
